@@ -1,5 +1,5 @@
 /*
-Theme Name: Physical Computing 
+Theme Name: Physical Computing
 Theme URI: http://github.com/ITPNYU/pcomp-theme
 Author: NYU ITP
 Author URI: http://itp.nyu.edu
@@ -32,6 +32,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .sidebar-note-content {
-	background-color: #b0c4de; 
+	background-color: #b0c4de;
 	padding: 10px;
+}
+
+.modified-info {
+	border-bottom: none !important;
+	font-size: 12px !important;
+	font-style: italic;
 }
