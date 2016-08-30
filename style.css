@@ -1,10 +1,10 @@
 /*
-Theme Name: Physical Computing
+Theme Name: Pcomp Theme
 Theme URI: http://github.com/ITPNYU/pcomp-theme
 Author: NYU ITP
 Author URI: http://itp.nyu.edu
-Description: A WP Twenty Fourteen child theme for the ITP Physical Computing site
-Template: twentyfourteen
+Description: A child theme for the ITP Physical Computing site
+Template: colorway
 Version: 0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -15,29 +15,198 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* =Imports styles from the parent theme
  * -------------------------------------------------------------- */
-@import url('../twentyfourteen/style.css');
+@import url('../colorway/style.css');
 
-/**
- * 6.0 Content
- * -----------------------------------------------------------------------------
- */
-
-.site-content .entry-header,
-.site-content .entry-content,
-.site-content .entry-summary,
-.site-content .entry-meta,
-.page-content {
-        margin: 0 auto;
-        max-width: 672px;
+body.custom-background, .footer-container{
+   background-color: #fff ;
+   background-image: none !important;
 }
 
-.sidebar-note-content {
-	background-color: #b0c4de;
-	padding: 10px;
+a{
+	color: #03A6E1 !important;
+}
+
+#crumbs a, p a, .cat-item a, .sl a{
+	color: #45A2C3 !important;
+}
+	
+#menu .sf-menu li a{
+	color: #000 !important;
+}
+
+#menu li.current-menu-item a, #menu li.current-menu-parent a, #menu li.current_page_parent a, #menu li a.selected, #menu li a:hover, #menu li.current_page_item a, #menu li.sfHover, #menu li.sfHover a{
+	background: #fff !important;
+}
+ 
+#menu li.current_page_parent a, #menu li.current-menu-item a,  #menu li.current_page_ancestor a, #menu li.current_page_item a{
+	background: #D0F2FE !important ;
+	color: #333 !important;
+}
+
+#menu li.sfHover a{
+	background: #fff !important;
+	color: #333 !important;
+	border: 1px solid #d7ecff !important;
+}
+
+ #menu li a.selected, #menu li a:hover{
+	background: #00B7FA !important ;
+	border: 1px solid #00B7FA !important;
+	color: #fff !important;
+}
+
+#menu .sf-menu li li a{
+	font-size: 13px !important;
+}
+
+#menu .sf-menu li li li a{
+	font-size: 13px !important;
+	border: 1px solid #d7ecff !important;
+}
+
+#menu .sf-menu li li li li a{
+	font-size: 13px !important;
+	border: 1px solid #d7ecff !important;
+}
+
+
+
+.footer-navi{
+	background:none !important;
+	border-top: 3px double #eeeeee;
+}
+.footer-navi .navigation ul li a{
+	color: #666 !important;
+}
+
+
+.container{
+	margin-top: 15px !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+.logo {
+  margin-top: 25px !important;
+}
+
+.header .menu-bar{
+  margin-top: 25px !important;
+}
+
+.title{
+  font-weight: bold;
+  color: #03A6E1;
+}
+
+
+.content-info{
+	border-bottom: none !important;
+	font-size: 12px !important; 
 }
 
 .modified-info {
 	border-bottom: none !important;
-	font-size: 12px !important;
+	font-size: 12px !important; 
 	font-style: italic;
+}
+
+#searchform #s{
+	height: 32px !important;
+}
+#searchform #searchsubmit{
+  top: 4px !important;
+  right: -9px !important;
+
+}
+.searchandfilter ul {
+	display: block !important;
+	margin: 0px;
+	margin-bottom: 20px;
+	min-width: 120px;
+	width: 100% !important;
+}
+
+
+.searchandfilter li{
+	width: 100% !important;
+	display: block  !important;
+	margin: 0px;
+	font-size:13px;
+	line-height:2 ;
+}
+
+
+.sidebar ul li:hover{
+	background: none !important;
+	background-color: #fff !important;
+}
+.sidebar ul li label:hover{
+		color: #45A2C3 !important;
+
+}
+
+.sidebar ul li ul{
+	margin-left: -10px !important;
+}
+
+
+li input[type="submit"]{
+height: 36px !important;
+  border: #000;
+  background-color: #45A2C3;
+  width: 100px;
+  color: #fff;
+  font-size: 14px;
+}
+
+th{
+	background-color: #fff !important;
+}
+
+.easy-table th, .easy-table td{
+	border-top: 1px solid #ddd;
+}
+
+.easy-table caption+thead tr:first-child th, .easy-table caption+thead tr:first-child td, .easy-table colgroup+thead tr:first-child th, .easy-table colgroup+thead tr:first-child td, .easy-table thead:first-child tr:first-child th, .easy-table thead:first-child tr:first-child td{
+		border-top: 1px solid #ddd !important;
+
+}
+
+
+.sl p em{
+	font-size: 12px;
+	margin-bottom: -10px;
+}
+
+.sl h1, .sl h2, .sl h3{
+	margin-bottom: 10px;
+	margin-top: 40px;
+}
+
+
+.sidebar-note-content{
+	background-color: #F0F8FD;
+  	border: 1px solid #C5E6FB;
+ 	padding:  0px 25px 10px 25px;
+  	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+
+.sidebar-note-content span{
+	font-weight: bold;
+}
+
+
+.searchandfilter h4{
+	margin: 0 !important;
+}
+
+.sidebar ul li{
+	padding: 2px 0 0 16px !important;
+	border: none !important;
+}
+
+.sidebar ul li:first-child{
+	border: none !important;
 }

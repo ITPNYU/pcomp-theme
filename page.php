@@ -16,6 +16,7 @@ get_header();
         <div class="content-wrap">
             <div class="content-info">
                 <?php if (function_exists('inkthemes_breadcrumbs')) inkthemes_breadcrumbs(); ?>
+
             </div>
             <div class="sl">
                 <?php if (have_posts()) while (have_posts()) : the_post(); ?>
@@ -28,8 +29,10 @@ get_header();
                                 <?php the_title(); ?>
                             </h1>
                         <?php } ?>
-                        <font size="9pt"><i>Originally written on <?php the_date(); ?> by <?php the_author(); ?> <br />
-			Last modified on <?php the_modified_date(); ?> by <?php the_modified_author(); ?></i></font>
+                    <div class="modified-info">
+				Originally written on <?php the_date(); ?> by <?php the_author(); ?> <br />
+				Last modified on <?php the_modified_date(); ?> by <?php the_modified_author(); ?>
+			</div>
                         <?php the_content(); ?>
                         <div class="clear"></div>
                         <?php wp_link_pages(array('before' => '<div class="page-link"><span>' . __('Pages:','colorway') . '</span>', 'after' => '</div>')); ?>
