@@ -38,11 +38,11 @@
             <!--Start Header Grid-->
             <div class="grid_24 header">
                 <div class="logo">
-                   <h1 class="title">ITP Physical Computing</h1>
+                  <a href="<?php echo home_url(); ?>"><img src="<?php if (inkthemes_get_option('colorway_logo') != '') { ?><?php echo inkthemes_get_option('colorway_logo'); ?><?php } else { ?><?php echo get_template_directory_uri(); ?>/images/logo.png<?php } ?>" alt="<?php bloginfo('name'); ?> logo"/></a>
                 </div>
                 <!--Start MenuBar-->
-                <div class="menu-bar">  
-                    <?php inkthemes_nav(); ?>                       
+                <div class="menu-bar">
+                    <?php inkthemes_nav(); ?>
                     <div class="clearfix"></div>
                 </div>
                 <!--End MenuBar-->
